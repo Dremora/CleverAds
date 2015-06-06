@@ -4,6 +4,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   playerMode: true,
+  firstAdDelay: 1, // in seconds
 
   createVideoPlayer() {
     // PARAMS is a javascript object containing parameters to pass to the player if any (eg: {autoplay: 1})
@@ -78,7 +79,7 @@ export default Ember.Component.extend({
     var prevTime = 0;
     player.addEventListener('timeupdate', (event) => {
       var currentTime = event.srcElement.currentTime;
-      if (prevTime < 5 && currentTime > 5) {
+      if (prevTime < this.get('firstAdDelay') && currentTime > this.get('firstAdDelay')) {
         player.pause();
         Ember.run(() => {
           this.set('playerMode', false);
