@@ -4,6 +4,7 @@ $(function () {
     var PARAMS = {background: 'ABE866', autoplay: 1, chromeless: 0,
       foreground: '000000',
       html: 1, highlight: '857580',
+      GK_PV5: 1,
       info: 1, network: 'dsl', autoplay : 0};
     return DM.player("player", {
       video: "x2sx8z4",
@@ -19,6 +20,7 @@ $(function () {
     var PARAMS = {background: 'ABE866', autoplay: 1, chromeless: 0,
       foreground: '000000',
       html: 1, highlight: '857580',
+      GK_PV5: 1,
       info: 1, network: 'dsl', autoplay : 0, chromeless: true};
     return DM.player("ad", {
       video: "xx6hd9",
