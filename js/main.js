@@ -67,44 +67,4 @@ $(function () {
     }
     prevTime = currentTime;
   });
-
-  //----- TOGGLE PLAY - OK to play, NOK to pause -----//
-  $('#togglePlay').click(function() {
-    player.togglePlay();
-  });
-
-  //----- SEEK - OK -----//
-  $('#seek').click(function() {
-    player.seek(10);
-  });
-
-  //----- LOAD - OK -----//
-  $('#load').click(function() {
-    player.load("x174uig");
-  });
-
-  //----- SETVOLUME - OK -----//
-  $('#setVolume').click(function() {
-    player.setVolume(0.2);
-  });
-
-  //----- UNMUTE - NOK -----//
-  $('#unmute').click(function() {
-    player.setMuted(0);
-  });
-
-  //----- MUTE - OK -----//
-  $('#mute').click(function() {
-    player.setMuted(1);
-  });
-
-  //----- TOGGLEMUTE - OK -----//
-  $('#toggleMute').click(function() {
-    player.toggleMuted();
-  });
-
-  //----- FULLSCREEN - NOK -----//
-  $('#setFullscreen').click(function() {
-    player.setFullscreen(1);
-  });
 });

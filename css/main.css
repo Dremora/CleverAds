@@ -1,12 +1,13 @@
 html, body {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 
-#console {
-  margin-top : 3px;
-  width : 640px;
-  height: auto;
-  border : 1px solid red;
+h1 {
+  color: #6FC1AF;
+  font-size: 32px;
+  line-height: 60px;
+  margin-left: 64px;
 }
 
 #clever-ads-player {
