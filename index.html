@@ -1,7 +1,7 @@
 <html>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <head>
     <link type="text/css" rel="stylesheet" href="/css/main.css" media="all" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script src="/js/main.js"></script>
   </head>
@@ -12,7 +12,16 @@
       <!-- This <div> tag will be replaced the <iframe> video player -->
       <div id="player"></div>
       <div id="console">....</div>
-      <div id="controls"></div>
+      <div id="controls">
+        <button id="togglePlay">togglePlay</button>
+        <button id="seek">seek</button>
+        <button id="load">load</button>
+        <button id="setVolume">setVolume</button>
+        <button id="unmute">unmute</button>
+        <button id="mute">mute</button>
+        <button id="toggleMute">toggleMute</button>
+        <button id="setFullscreen">setFullscreen</button>
+      </div>
     </div>
   </body>
 </html>
