@@ -23,7 +23,7 @@ $(function () {
       GK_PV5: 1,
       info: 1, network: 'dsl', autoplay : 0, chromeless: true};
     return DM.player("ad", {
-      video: "xx6hd9",
+      video: "x2syjz3",
       width: "640",
       height: "360",
       params: PARAMS
