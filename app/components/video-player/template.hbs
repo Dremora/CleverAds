@@ -1,0 +1,11 @@
+<div id="clever-ads-player">
+  <div id="playerContainer">
+    <div id="ad"></div>
+    <div id="player"></div>
+    {{#if isQuizOn}}
+      {{ad-quiz question=questions correctAnswer="correctAnswer" incorrectAnswer="incorrectAnswer"}}
+    {{/if}}
+  </div>
+  <div id="controls">
+  </div>
+</div>
