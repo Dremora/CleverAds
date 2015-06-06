@@ -82,6 +82,7 @@ h1 {
 
 .quiz-answer {
   font-size: 16px;
+  padding: 0;
   box-sizing: border-box;
   width: calc(100%/3 - 20px);
   margin: 0 10px;
