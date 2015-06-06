@@ -63,7 +63,19 @@ $(function () {
       player.pause();
       showAd();
       ad.play();
-      getTheQuiz('1');
+      getTheQuiz('1', function() {
+
+        alert('Wrong answer!');
+
+      },
+        function() {
+          ad.pause();
+          // Show success.
+          hideTheQuiz();
+          showPlayer();
+          player.play();
+        }
+      );
     }
     prevTime = currentTime;
   });
