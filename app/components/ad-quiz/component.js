@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   elementId: 'the-quiz',
 
   actions: {
-    selectAnswer(option, correctAnswer) {
+    selectAnswer(option) {
       if (option.id === this.get('question.correctAnswer')) {
         this.set('success', true);
         Ember.run.later(this, () => {

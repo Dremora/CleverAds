@@ -60,7 +60,7 @@ export default Ember.Component.extend({
     ad.addEventListener('apiready', () => {
       Ember.run(() => {
         ad.play();
-        $(ad).one('playing', () => {
+        Ember.$(ad).one('playing', () => {
           ad.removeEventListener('playing');
           ad.pause();
 
@@ -70,7 +70,7 @@ export default Ember.Component.extend({
               this.set('playerMode', true);
             });
             player.play();
-          })
+          });
         });
       });
     });

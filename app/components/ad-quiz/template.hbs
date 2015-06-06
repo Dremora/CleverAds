@@ -4,7 +4,7 @@
 <div class="quiz-title">{{question.title}}</div>
 <div class="quiz-answer-container">
   {{#each question.options as |option|}}
-    <button class="quiz-answer" {{action 'selectAnswer' option question.correctAnswer}}>{{option.title}}</button>
+    <button class="quiz-answer" {{action 'selectAnswer' option}}>{{option.title}}</button>
   {{/each}}
 </div>
 </div>
