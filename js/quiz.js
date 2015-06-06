@@ -1,4 +1,4 @@
-(function() {
+
 
   var getTheQuiz = function(quizName) {
 
@@ -21,9 +21,3 @@
       $('#the-quiz').html(output).removeClass('hidden');
     });
   };
-
-  getTheQuiz('1');
-
-}());
-
-

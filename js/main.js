@@ -64,6 +64,7 @@ $(function () {
       player.pause();
       showAd();
       ad.play();
+      getTheQuiz('1');
     }
     prevTime = currentTime;
   });
