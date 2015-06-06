@@ -12,6 +12,7 @@ var getTheQuiz = function(quizName, badCall, correctCall) {
       var questionCorrectAnswer = question.correctAnswer;
 
       output += '<div class="quiz-success"><img src="/images/correct-answer.svg"></div>';
+      output += '<div class="quiz-failure"><img src="/images/incorrect-answer.svg"></div>';
       output += '<div class="quiz-title">' + questionTitle + '</div>';
       output += '<div class="quiz-answer-container">';
       $.each(question.options, function(index, value) {

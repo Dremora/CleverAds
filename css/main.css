@@ -101,3 +101,12 @@ h1 {
   background: rgba(139, 210, 67, 0.22);
   color: #7ED321;
 }
+
+.quiz-answer-incorrect {
+
+}
+
+.quiz-success, .quiz-failure {
+  text-align: center;
+  display: none;
+}
