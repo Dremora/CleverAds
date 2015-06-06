@@ -1,6 +1,6 @@
 <div><div class="quiz-background"></div>
 {{#if success}}<div class="quiz-success"><img src="/images/correct-answer.svg"></div>{{/if}}
-{{#if failure}}<div class="quiz-failure"><img src="/images/incorrect-answer.svg"></div>{{/if}}
+{{#if failure}}<div class="quiz-failure"><img src="/images/incorrect-answer.svg"><br>You can do better!</div>{{/if}}
 
 {{#unless answerGiven}}
 <div class="quiz-title">{{question.title}}</div>

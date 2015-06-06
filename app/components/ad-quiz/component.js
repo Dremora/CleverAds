@@ -2,7 +2,15 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   elementId: 'the-quiz',
+  success: false,
+  failure: false,
   answerGiven: false,
+
+  resetComponent: function () {
+    this.set('success', false);
+    this.set('failure', false);
+    this.set('answerGiven', false);
+  }.observes('question'),
 
   actions: {
     selectAnswer(option) {

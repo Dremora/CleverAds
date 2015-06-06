@@ -4,7 +4,12 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   playerMode: true,
+  currentQuestion: 0,
   firstAdDelay: 1, // in seconds
+
+  question: function () {
+    return this.get('questions')[this.get('currentQuestion')];
+  }.property('questions', 'currentQuestion'),
 
   createVideoPlayer() {
     // PARAMS is a javascript object containing parameters to pass to the player if any (eg: {autoplay: 1})
@@ -40,7 +45,11 @@ export default Ember.Component.extend({
 
   actions: {
     incorrectAnswer() {
-      this.set('isQuizOn', false);
+      if (this.get('currentQuestion') + 1 < this.get('questions').length) {
+        this.set('currentQuestion', this.get('currentQuestion') + 1);
+      } else {
+        this.set('isQuizOn', false);
+      }
     },
 
     correctAnswer() {
