@@ -50,6 +50,8 @@ $(function () {
       ad.pause();
 
       ad.addEventListener('ended', function () {
+        $('#the-quiz').html('');
+        showPlayer();
         player.play();
       })
     });
@@ -64,14 +66,11 @@ $(function () {
       showAd();
       ad.play();
       getTheQuiz('1', function() {
-
-        alert('Wrong answer!');
-
+        $('#the-quiz').html('');
       },
         function() {
+          $('#the-quiz').html('');
           ad.pause();
-          // Show success.
-          hideTheQuiz();
           showPlayer();
           player.play();
         }

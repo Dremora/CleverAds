@@ -11,6 +11,7 @@ var getTheQuiz = function(quizName, badCall, correctCall) {
       var questionTitle = question.title;
       var questionCorrectAnswer = question.correctAnswer;
 
+      output += '<div class="quiz-success"><img src="images/correct-answer.svg"></div>';
       output += '<div class="quiz-title">' + questionTitle + '</div>';
       output += '<div class="quiz-answer-container">';
       $.each(question.options, function(index, value) {
@@ -26,10 +27,14 @@ var getTheQuiz = function(quizName, badCall, correctCall) {
       var answer = $(this).data('answer');
 
       if (answer == questionCorrectAnswer) {
-        correctCall();
+        $('.quiz-success').show();
+        $(this).addClass('quiz-answer--correct');
+        setTimeout(correctCall, 3000);
       }
       else {
-        badCall();
+        $('.quiz-failure').show();
+        $(this).addClass('quiz-answer--incorrect');
+        setTimeout(badCall, 3000);
       }
 
     });
