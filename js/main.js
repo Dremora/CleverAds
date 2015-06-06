@@ -43,7 +43,6 @@ $(function () {
   var player = createVideoPlayer();
   var ad = createAdPlayer();
 
-
   ad.addEventListener('apiready', function () {
     ad.play();
     $(ad).one('playing', function () {

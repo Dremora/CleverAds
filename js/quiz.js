@@ -4,7 +4,7 @@
 
     $.get("/tpl/quiz/" + quizName + ".json", function(data) {
 
-      var output = "";
+      var output = '<div class="quiz-background"></div>';
       var quizTitle = data.title;
 
       for (var i = 0; i < 1; i++) {
@@ -12,9 +12,9 @@
         var question = data.questions[i];
         var questionTitle = question.title;
 
-        output += '<label>' + questionTitle + '</label>';
+        output += '<div class="quiz-title">' + questionTitle + '</div>';
         $.each(question.options, function(index, value) {
-          output += '<button data="' + index + '">' + value + '</button>';
+          output += '<button class="quiz-answer" data="' + index + '">' + value + '</button>';
         });
       }
 
