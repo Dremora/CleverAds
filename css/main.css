@@ -29,3 +29,8 @@
 #ad.active {
   z-index: 2;
 }
+
+.hidden {
+  display:none;
+}
+
