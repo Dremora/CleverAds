@@ -9,3 +9,14 @@
   margin: 0 auto;
   width: 640px;
 }
+
+#playerContainer {
+  width: 640px;
+  height: 360px;
+}
+
+#player, #ad {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

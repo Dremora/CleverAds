@@ -3,6 +3,7 @@
     <link type="text/css" rel="stylesheet" href="/css/main.css" media="all" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="//api.dmcdn.net/all.js"></script>
     <script src="/js/main.js"></script>
   </head>
 
@@ -10,7 +11,10 @@
 
     <div id="the-player">
       <!-- This <div> tag will be replaced the <iframe> video player -->
-      <div id="player"></div>
+      <div id="playerContainer">
+        <div id="player"></div>
+        <div id="ad"></div>
+      </div>
       <div id="console">....</div>
       <div id="controls">
         <button id="togglePlay">togglePlay</button>
