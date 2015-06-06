@@ -39,8 +39,16 @@ h1 {
 #the-quiz {
   z-index: 3;
   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#the-quiz > div {
+  position: absolute;
   top: auto;
-  bottom: 50px;
+  bottom: 5%;
   left: 0;
   right: 0;
 }
@@ -68,11 +76,15 @@ h1 {
   font-weight: 300;
 }
 
+.quiz-answer-container {
+  margin: 0 22px;
+}
+
 .quiz-answer {
   font-size: 16px;
   box-sizing: border-box;
-  width: calc(100%/3 - 10px);
-  margin: 0 5px;
+  width: calc(100%/3 - 20px);
+  margin: 0 10px;
   float: left;
   border: 1px solid #ffffff;
   color: #ffffff;
@@ -81,4 +93,10 @@ h1 {
   background: transparent;
   cursor: pointer;
   font-weight: 300;
+}
+
+.quiz-answer--correct {
+  border-color: #77B137;
+  background: rgba(139, 210, 67, 0.22);
+  color: #7ED321;
 }
