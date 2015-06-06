@@ -13,7 +13,7 @@ export default Ember.Component.extend({
       GK_PV5: 1,
       info: 1, network: 'dsl', autoplay : 0};
     return DM.player("player", {
-      video: "x2sx8z4",
+      video: "x2sz0be",
       width: "640",
       height: "360",
       params: PARAMS
@@ -29,7 +29,7 @@ export default Ember.Component.extend({
       GK_PV5: 1,
       info: 1, network: 'dsl', autoplay : 0, chromeless: true};
     return DM.player("ad", {
-      video: "x2syjz3",
+      video: "x2sz0bb",
       width: "640",
       height: "360",
       params: PARAMS
