@@ -11,7 +11,7 @@ var getTheQuiz = function(quizName, badCall, correctCall) {
       var questionTitle = question.title;
       var questionCorrectAnswer = question.correctAnswer;
 
-      output += '<div class="quiz-success"><img src="images/correct-answer.svg"></div>';
+      output += '<div class="quiz-success"><img src="/images/correct-answer.svg"></div>';
       output += '<div class="quiz-title">' + questionTitle + '</div>';
       output += '<div class="quiz-answer-container">';
       $.each(question.options, function(index, value) {
@@ -19,9 +19,6 @@ var getTheQuiz = function(quizName, badCall, correctCall) {
       });
       output += '</div>';
     }
-
-    // Set as global variable.
-    window.addCorrectAnswer = questionCorrectAnswer;
 
     $('#the-quiz').on("click", "button", function() {
       var answer = $(this).data('answer');
