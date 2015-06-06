@@ -9,12 +9,12 @@ export default Ember.Component.extend({
         this.set('success', true);
         Ember.run.later(this, () => {
           this.sendAction('correctAnswer');
-        }, 3000);
+        }, 2000);
       } else {
         this.set('failure', true);
         Ember.run.later(this, () => {
           this.sendAction('incorrectAnswer');
-        }, 3000);
+        }, 2000);
       }
     }
   }
