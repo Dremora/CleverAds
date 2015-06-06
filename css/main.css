@@ -19,4 +19,13 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
+}
+
+#player.active {
+  z-index: 2;
+}
+
+#ad.active {
+  z-index: 2;
 }
