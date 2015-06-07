@@ -5,7 +5,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   playerMode: true,
   currentQuestion: 0,
-  firstAdDelay: 1, // in seconds
+  firstAdDelay: 5, // in seconds
 
   question: function () {
     return this.get('questions')[this.get('currentQuestion')];
