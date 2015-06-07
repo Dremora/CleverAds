@@ -157,12 +157,12 @@ h1 {
 #clever-ads-player {
   margin: 0 auto;
   position: relative;
-  width: 640px;
+  width: 688px;
 }
 
 #playerContainer {
-  width: 640px;
-  height: 360px;
+  width: 688px;
+  height: 387px;
 }
 
 #player, #ad, #the-quiz {
@@ -192,7 +192,8 @@ h1 {
 #the-quiz > div {
   position: absolute;
   top: auto;
-  bottom: 5%;
+  bottom: 0;
+  padding-bottom: 5%;
   left: 0;
   right: 0;
 }

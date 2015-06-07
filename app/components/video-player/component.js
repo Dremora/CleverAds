@@ -20,8 +20,8 @@ export default Ember.Component.extend({
       info: 1, network: 'dsl', autoplay : 0};
     return DM.player("player", {
       video: "x2sz0be",
-      width: "640",
-      height: "360",
+      width: "688",
+      height: "387",
       params: PARAMS
     }
     );
@@ -36,8 +36,8 @@ export default Ember.Component.extend({
       info: 1, network: 'dsl', autoplay : 0, chromeless: true};
     return DM.player("ad", {
       video: "x2sz0bb",
-      width: "640",
-      height: "360",
+      width: "688",
+      height: "387",
       params: PARAMS
     }
     );
