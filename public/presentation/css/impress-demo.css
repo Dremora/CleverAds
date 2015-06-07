@@ -244,6 +244,10 @@ a:focus {
     height: 700px;
 }
 
+.img {
+    width: 100%;
+}
+
 .slide q {
     display: block;
     font-size: 50px;
