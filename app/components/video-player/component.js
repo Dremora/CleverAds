@@ -104,5 +104,6 @@ export default Ember.Component.extend({
     var playerMode = this.get('playerMode');
     this.$('#player')[playerMode ? 'addClass' : 'removeClass']('active');
     this.$('#ad')[playerMode ? 'removeClass' : 'addClass']('active');
+    this.$('#adOverlay')[playerMode ? 'removeClass' : 'addClass']('active');
   }.observes('playerMode').on('didInsertElement')
 });
