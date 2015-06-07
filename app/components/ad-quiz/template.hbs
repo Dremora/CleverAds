@@ -1,13 +1,15 @@
-<div><div class="quiz-background"></div>
+<div class="quiz-background"></div>
+
 {{#if success}}<div class="quiz-success"><img src="/images/correct-answer.svg"><br>{{question.correctAnswerMessage}}</div>{{/if}}
 {{#if failure}}<div class="quiz-failure"><img src="/images/incorrect-answer.svg"><br>{{question.incorrectAnswerMessage}}</div>{{/if}}
 
 {{#unless answerGiven}}
-<div class="quiz-title">{{question.title}}</div>
-<div class="quiz-answer-container">
-  {{#each question.options as |option|}}
-    <button class="quiz-answer" {{action 'selectAnswer' option}}>{{option.title}}</button>
-  {{/each}}
-</div>
+  <div class="quiz-contents">
+    <div class="quiz-title">{{question.title}}</div>
+    <div class="quiz-answer-container">
+      {{#each question.options as |option|}}
+        <button class="quiz-answer" {{action 'selectAnswer' option}}>{{option.title}}</button>
+      {{/each}}
+    </div>
+  </div>
 {{/unless}}
-</div>
