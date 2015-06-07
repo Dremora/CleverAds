@@ -5,7 +5,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   playerMode: true,
   currentQuestion: 0,
-  firstAdDelay: 45, // in seconds
+  firstAdDelay: 1, // in seconds
 
   question: function () {
     return this.get('questions')[this.get('currentQuestion')];
@@ -19,7 +19,7 @@ export default Ember.Component.extend({
       GK_PV5: 1,
       info: 1, network: 'dsl', autoplay : 0};
     return DM.player("player", {
-      video: "x2sx8z4",
+      video: "x2sz0be",
       width: "688",
       height: "387",
       params: PARAMS
@@ -35,7 +35,7 @@ export default Ember.Component.extend({
       GK_PV5: 1,
       info: 1, network: 'dsl', autoplay : 0, chromeless: true};
     return DM.player("ad", {
-      video: "xuqszc",
+      video: "x2sz0bb",
       width: "688",
       height: "387",
       params: PARAMS
@@ -67,13 +67,10 @@ export default Ember.Component.extend({
     this.set('player', player);
     this.set('ad', ad);
 
-    $(player).one('play', () => player.seek(40));
-
     ad.addEventListener('apiready', () => {
       Ember.run(() => {
         ad.play();
         Ember.$(ad).one('playing', () => {
-          ad.api('seek', 20);
           ad.removeEventListener('playing');
           ad.pause();
 
